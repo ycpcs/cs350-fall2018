@@ -9,6 +9,11 @@ Additional content will be added as it becomes available throughout the semester
 You can find digital copies of the in-class activities [here](activities.html).<br>
 
 <script type="text/javascript">document.write(String(window.dates[0]));</script>
+<script type="text/javascript">document.write(String(window.dates[1]));</script>
+<script type="text/javascript">document.write(String(window.dates[2]));</script>
+<script type="text/javascript">document.write(String(window.dates[3]));</script>
+<script type="text/javascript">document.write(String(window.dates[4]));</script>
+<script type="text/javascript">document.write(String(window.dates[4]));</script>
 
 
 **Date**       | **Topic**                                                                                     |  **Labs**                                                   |  **Assignments**                                                           
