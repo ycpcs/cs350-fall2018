@@ -39,4 +39,5 @@ function getDates(d1, d2, o1, o2, o3) {
 
 // get the string for the date
 // getting just the first date in the example below
-String(getDates( firstMonday, lastDay, offset1, offset2, offset3 )[0]);
+// String(getDates( firstMonday, lastDay, offset1, offset2, offset3 )[0]);
+window.dates = getDates( firstMonday, lastDay, offset1, offset2, offset3 );

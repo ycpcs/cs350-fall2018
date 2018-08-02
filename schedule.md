@@ -8,6 +8,8 @@ The following schedule is subject to change.
 Additional content will be added as it becomes available throughout the semester.<br>
 You can find digital copies of the in-class activities [here](activities.html).<br>
 
+<script>String(window.dates[0]);</script>
+
 
 **Date**       | **Topic**                                                                                     |  **Labs**                                                   |  **Assignments**                                                           
 :--------------|:----------------------------------------------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------------------------------    
