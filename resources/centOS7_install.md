@@ -13,6 +13,8 @@ Not currently covered by this guide.
 
 ### Installing CentOS 7
 
+<hr><br><!-- =============================================================== -->
+
 **Step 0:** Download CentOS.  A link to the installation ISO is provided 
 on the [Resources](index.md) page.
 
@@ -224,6 +226,8 @@ installed the OS in a virtual machine.
 
 ### Installing Development Tools and Clang
 
+<hr><br><!-- =============================================================== -->
+
 **Step 1:** Click the "Applications" menu in the top-left corner, find and run 
 the "Terminal" application.
 <br><br>
@@ -299,6 +303,8 @@ When this command completes, clang should be installed.
 
 
 ### Installing CLion
+
+<hr><br><!-- =============================================================== -->
 
 **Step 1:** Click the "Applications" menu in the top-left corner, find and run 
 the "Firefox" web browser application.
