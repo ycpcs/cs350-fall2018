@@ -3,7 +3,7 @@
 var firstMonday = new Date("8/27/2018 12:00:00");
 var lastDay = new Date("12/11/2018 12:00:00");
 
-var inClassFinal = true;  // true if final exam is on last day of class; false if final exam is during exam week
+var inClassFinal = false;  // true if final exam is on last day of class; false if final exam is during exam week
 var finalExamDay = new Date("12/14/2018 12:00:00");  // not used if final is on last day of classes
 
 // the offset values specify the number of days away from Monday that 
