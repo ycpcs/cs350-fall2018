@@ -8,7 +8,11 @@ The following schedule is subject to change.
 Additional content will be added as it becomes available throughout the semester.<br>
 You can find digital copies of the in-class activities [here](activities.html).<br>
 
-<script>document.write(String(window.dates[0]));</script>
+<script>ds(0);</script><br>
+<script>ds(1);</script><br>
+<script>ds(2);</script><br>
+<script>ds(3);</script><br>
+<script>ds(4);</script><br>
 
 <script>document.write(String(window.dates[1]));</script>
 

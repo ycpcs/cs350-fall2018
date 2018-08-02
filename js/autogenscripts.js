@@ -43,6 +43,10 @@ function getDates(d1, d2, o1, o2, o3) {
     return dates;
 }
 
+function ds(i) {
+    document.write(String(window.dates[i]));
+}
+
 // get the string for the date
 // getting just the first date in the example below
 // String(getDates( firstMonday, lastDay, offset1, offset2, offset3 )[0]);
