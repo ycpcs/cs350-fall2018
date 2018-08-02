@@ -211,7 +211,7 @@ Click the "Start using CentOS Linux" button to continue.
 <hr><br><!-- =============================================================== -->
 
 **Step 30:** Take a few minutes to poke around the Operating Sytem
-and its settings.  You'll may need to change the resolution if you
+and its settings.  You may need to change the resolution if you
 installed the OS in a virtual machine.
 
 <hr><br><!-- =============================================================== -->
@@ -277,6 +277,7 @@ When this command completes, clang should be installed.
 <br><br>
 ![image](package_installation_images/step05.png)
 
+<hr><br><!-- =============================================================== -->
 
 **Step 6:** Use the terminal to install valgrind. If you are not 
 already the root user, type ```su``` to switch users to the root user.
