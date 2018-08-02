@@ -13,6 +13,7 @@ var offset2 = 3;   // days from Monday when course runs (twice per week)
 var offset3 = -1;  // days from Monday when course runs (thrice per week)
 
 var days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 
 function getDates(d1, d2, o1, o2, o3) {
@@ -26,17 +27,17 @@ function getDates(d1, d2, o1, o2, o3) {
     for (var class1=startDate, class2=(d1*1 + o2*oneDay), class3=(d1*1 + o3*oneDay)  ; (class1 < endDate); class1+=oneWeek, class2+=oneWeek, class3+=oneWeek) {
         if ((o1 !== -1) && (class1 < endDate)) {
             d = new Date(class1);
-            dates.push( days[d.getDay()] + ", " + d.getMonth() + " " + d.getDate() );
+            dates.push( days[d.getDay()] + ", " + months[d.getMonth()] + " " + d.getDate() );
         }
 
         if ((o2 !== -1) && (class2 < endDate)) {
             d = new Date(class2);
-            dates.push( days[d.getDay()] + ", " + d.getMonth() + " " + d.getDate() );
+            dates.push( days[d.getDay()] + ", " + months[d.getMonth()] + " " + d.getDate() );
         }
 
         if ((o3 !== -1) && (class3 < endDate)) {
             d = new Date(class3);
-            dates.push( days[d.getDay()] + ", " + d.getMonth() + " " + d.getDate() );
+            dates.push( days[d.getDay()] + ", " + months[d.getMonth()] + " " + d.getDate() );
         }
     }
     return dates;
