@@ -3,6 +3,9 @@
 var firstMonday = new Date("8/27/2018 12:00:00");
 var lastDay = new Date("12/11/2018 12:00:00");
 
+var inClassFinal = true;  // true if final exam is on last day of class; false if final exam is during exam week
+var finalExamDay = new Date("12/14/2018 12:00:00");  // not used if final is on last day of classes
+
 // the offset values specify the number of days away from Monday that 
 // a course runs. Setting offset1 to '1' means that the first class of 
 // the week runs on Monday+1 (i.e. Tuesday). An offset of 3 means
@@ -16,7 +19,10 @@ var days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 
-function getDates(d1, d2, o1, o2, o3) {
+// d1 = startDate (first Monday)
+// d2 = endDate
+// d3 = finalExamDay
+function getDates(d1, d2, d3, o1, o2, o3) {
     var oneDay = 24*3600*1000;
     var oneWeek = 7*oneDay;
 
@@ -40,14 +46,18 @@ function getDates(d1, d2, o1, o2, o3) {
             dates.push( days[d.getDay()] + ", " + months[d.getMonth()] + " " + d.getDate() );
         }
     }
+
+    if (!inClassFinal) {
+        // include the final exam
+        dates.push(days[d3.getDay()] + ", " + months[d3.getMonth()] + " " + d3.getDate());
+    }
     return dates;
 }
+
 
 function ds(i) {
     document.write(String(window.dates[i]));
 }
 
-// get the string for the date
-// getting just the first date in the example below
-// String(getDates( firstMonday, lastDay, offset1, offset2, offset3 )[0]);
-window.dates = getDates( firstMonday, lastDay, offset1, offset2, offset3 );
+
+window.dates = getDates( firstMonday, lastDay, finalExamDay, offset1, offset2, offset3 );
