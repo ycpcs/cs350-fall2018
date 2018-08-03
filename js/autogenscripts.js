@@ -18,6 +18,8 @@ var offset3 = -1;  // days from Monday when course runs (thrice per week)
 // // //////////////////////////////////////////////////////////////////////////////////////////////
 // // List of Topics
 // // //////////////////////////////////////////////////////////////////////////////////////////////
+function Topic(title, link) { this.title = title; this.link = link; }
+
 window.topics[0]=new Topic(  "Intro to C++", "lectures/intro_to_C++.html");
 window.topics[1]=new Topic(  "Stacks & Queues", "lectures/xx.pdf"); //  & [Queues](lectures/Queues_lecture.pdf)";  // MAKE LECTURE CONTAIN BOTH STACKS AND QUEUES
 window.topics[2]=new Topic(  "C++ Templates", "lectures/C++_templates.html");
@@ -164,18 +166,16 @@ function getDates(d1, d2, d3, o1, o2, o3) {
 }
 
 
-function ds(i) {
-    document.write(String(window.dates[i]));
-}
+
 
 window.dates = getDates( firstMonday, lastDay, finalExamDay, offset1, offset2, offset3 );
 
 // //////////////////////////////////////////////////////////////////////////////////////////////
 // //////////////////////////////////////////////////////////////////////////////////////////////
 
-function Topic(title, link) {
-    this.title = title;
-    this.link = link;
+
+function ds(i) {
+    document.write(String(window.dates[i]));
 }
 
 
@@ -183,7 +183,6 @@ function t(i) {
     document.write("<a href=\"" + window.topics[i].link + "\">" + window.topics[i].title + "</a>");
 }
 
-// t(0);
 
 // //////////////////////////////////////////////////////////////////////////////////////////////
 // //////////////////////////////////////////////////////////////////////////////////////////////
