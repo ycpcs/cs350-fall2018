@@ -180,8 +180,7 @@ function Topic(title, link) {
 
 
 function t(i) {
-    // document.write("<a href=\"" + topics[i].link + "\">" + topics[i].title + "</a>");
-    return "hello";
+    document.write("<a href=\"" + topics[i].link + "\">" + topics[i].title + "</a>");
 }
 
 // t(0);
