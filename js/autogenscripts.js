@@ -18,37 +18,37 @@ var offset3 = -1;  // days from Monday when course runs (thrice per week)
 // // //////////////////////////////////////////////////////////////////////////////////////////////
 // // List of Topics
 // // //////////////////////////////////////////////////////////////////////////////////////////////
-topics[0]=new Topic(  "Intro to C++", "lectures/intro_to_C++.html");
-topics[1]=new Topic(  "Stacks & Queues", "lectures/xx.pdf"); //  & [Queues](lectures/Queues_lecture.pdf)";  // MAKE LECTURE CONTAIN BOTH STACKS AND QUEUES
-topics[2]=new Topic(  "C++ Templates", "lectures/C++_templates.html");
-topics[3]=new Topic(  "Linked Lists", "lectures/LinkedList_lecture.pdf");
-topics[4]=new Topic(  "Doubly Linked Lists", "lectures/DoublyLinkedList_lecture.pdf");
-topics[5]=new Topic(  "Skip Lists", "lectures/Skip_Lists.pdf");
-topics[6]=new Topic(  "Skip Lists (Cont.)", "");
-topics[7]=new Topic(  "Review for Exam #1", "");
-topics[8]=new Topic(  "**Exam #1**", "");
-topics[9]=new Topic(  "Trees & Tree Traversal", "lectures/Trees_lecture.pdf"); // & [Tree Traversal", "lectures/Tree_Traversal_lecture.pdf");  // MAKE LECTURE CONTAIN BOTH
-topics[10]=new Topic(  "Binary Search Trees, Find", "lectures/Binary_Search_Trees.pdf");
-topics[11]=new Topic(  "Binary Search Trees, Insert/Remove", "lectures/Binary_Search_Trees.pdf");
-topics[12]=new Topic(  "AVL Trees", "lectures/AVL_Trees.pdf");
-topics[13]=new Topic(  "AVL Trees (Cont.)", "");
-topics[14]=new Topic(  "**NO CLASS - Fall Break**", "");
-topics[15]=new Topic(  "Red-Black Trees", "lectures/Red-Black_Trees.pdf");
-topics[16]=new Topic(  "Red-Black Trees (Cont.)", "");
-topics[17]=new Topic(  "Review for Exam #2", "");
-topics[18]=new Topic(  "**Exam #2**", "");
-topics[19]=new Topic(  "AA-Trees, Insert", "lectures/AA-tree_lecture.pdf");
-topics[20]=new Topic(  "AA-Trees, Delete", "lectures/AA-tree_lecture.pdf");
-topics[21]=new Topic(  "B-Trees", "lectures/B-Trees.pdf");
-topics[22]=new Topic(  "Review for Exam #3", "");
-topics[23]=new Topic(  "**Exam #3**", "");
-topics[24]=new Topic(  "Binary Heaps", "lectures/Heaps.pdf");
-topics[25]=new Topic(  "**NO CLASS - Thanksgiving Break**", "");
-topics[26]=new Topic(  "Binary Heaps (Cont.)", "");
-topics[27]=new Topic(  "Hash Tables", "lectures/Hash_Tables.pdf");
-topics[28]=new Topic(  "Hash Tables (Cont.)", "");
-topics[29]=new Topic(  "Graphs & Dijkstra's Algorithm", "lectures/Graphs.pdf"); // & [Dijkstra's Algorithm](lectures/Dijkstras_Algorithm.pdf");   // MAKE LECTURE CONTAIN BOTH
-topics[30]=new Topic(  "**Final Exam**", "");
+window.topics[0]=new Topic(  "Intro to C++", "lectures/intro_to_C++.html");
+window.topics[1]=new Topic(  "Stacks & Queues", "lectures/xx.pdf"); //  & [Queues](lectures/Queues_lecture.pdf)";  // MAKE LECTURE CONTAIN BOTH STACKS AND QUEUES
+window.topics[2]=new Topic(  "C++ Templates", "lectures/C++_templates.html");
+window.topics[3]=new Topic(  "Linked Lists", "lectures/LinkedList_lecture.pdf");
+window.topics[4]=new Topic(  "Doubly Linked Lists", "lectures/DoublyLinkedList_lecture.pdf");
+window.topics[5]=new Topic(  "Skip Lists", "lectures/Skip_Lists.pdf");
+window.topics[6]=new Topic(  "Skip Lists (Cont.)", "");
+window.topics[7]=new Topic(  "Review for Exam #1", "");
+window.topics[8]=new Topic(  "**Exam #1**", "");
+window.topics[9]=new Topic(  "Trees & Tree Traversal", "lectures/Trees_lecture.pdf"); // & [Tree Traversal", "lectures/Tree_Traversal_lecture.pdf");  // MAKE LECTURE CONTAIN BOTH
+window.topics[10]=new Topic(  "Binary Search Trees, Find", "lectures/Binary_Search_Trees.pdf");
+window.topics[11]=new Topic(  "Binary Search Trees, Insert/Remove", "lectures/Binary_Search_Trees.pdf");
+window.topics[12]=new Topic(  "AVL Trees", "lectures/AVL_Trees.pdf");
+window.topics[13]=new Topic(  "AVL Trees (Cont.)", "");
+window.topics[14]=new Topic(  "**NO CLASS - Fall Break**", "");
+window.topics[15]=new Topic(  "Red-Black Trees", "lectures/Red-Black_Trees.pdf");
+window.topics[16]=new Topic(  "Red-Black Trees (Cont.)", "");
+window.topics[17]=new Topic(  "Review for Exam #2", "");
+window.topics[18]=new Topic(  "**Exam #2**", "");
+window.topics[19]=new Topic(  "AA-Trees, Insert", "lectures/AA-tree_lecture.pdf");
+window.topics[20]=new Topic(  "AA-Trees, Delete", "lectures/AA-tree_lecture.pdf");
+window.topics[21]=new Topic(  "B-Trees", "lectures/B-Trees.pdf");
+window.topics[22]=new Topic(  "Review for Exam #3", "");
+window.topics[23]=new Topic(  "**Exam #3**", "");
+window.topics[24]=new Topic(  "Binary Heaps", "lectures/Heaps.pdf");
+window.topics[25]=new Topic(  "**NO CLASS - Thanksgiving Break**", "");
+window.topics[26]=new Topic(  "Binary Heaps (Cont.)", "");
+window.topics[27]=new Topic(  "Hash Tables", "lectures/Hash_Tables.pdf");
+window.topics[28]=new Topic(  "Hash Tables (Cont.)", "");
+window.topics[29]=new Topic(  "Graphs & Dijkstra's Algorithm", "lectures/Graphs.pdf"); // & [Dijkstra's Algorithm](lectures/Dijkstras_Algorithm.pdf");   // MAKE LECTURE CONTAIN BOTH
+window.topics[30]=new Topic(  "**Final Exam**", "");
 // // //////////////////////////////////////////////////////////////////////////////////////////////
 //
 // // //////////////////////////////////////////////////////////////////////////////////////////////
@@ -180,7 +180,7 @@ function Topic(title, link) {
 
 
 function t(i) {
-    document.write("<a href=\"" + topics[i].link + "\">" + topics[i].title + "</a>");
+    document.write("<a href=\"" + window.topics[i].link + "\">" + window.topics[i].title + "</a>");
 }
 
 // t(0);
