@@ -15,114 +15,114 @@ var offset1 = 1;   // days from Monday when course runs
 var offset2 = 3;   // days from Monday when course runs (twice per week)
 var offset3 = -1;  // days from Monday when course runs (thrice per week)
 
-// //////////////////////////////////////////////////////////////////////////////////////////////
-// List of Topics
-// //////////////////////////////////////////////////////////////////////////////////////////////
-topics[0]=new Topic("  Intro to C++", "lectures/intro_to_C++.html");
-topics[1]=new Topic("  Stacks", "lectures/Stacks_lecture.pdf) & [Queues](lectures/Queues_lecture.pdf)";
-topics[2]=new Topic("  C++ Templates", "lectures/C++_templates.html");
-topics[3]=new Topic("  Linked Lists", "lectures/LinkedList_lecture.pdf");
-topics[4]=new Topic("  Doubly Linked Lists", "lectures/DoublyLinkedList_lecture.pdf");
-topics[5]=new Topic("  Skip Lists", "lectures/Skip_Lists.pdf");
-topics[6]=new Topic("  Skip Lists (Cont.)", "");
-topics[7]=new Topic("  Review for Exam #1", "");
-topics[8]=new Topic("  **Exam #1**", "");
-topics[9]=new Topic("  Trees", "lectures/Trees_lecture.pdf) & [Tree Traversal", "lectures/Tree_Traversal_lecture.pdf");
-topics[10]=new Topic("  Binary Search Trees, Find", "lectures/Binary_Search_Trees.pdf");
-topics[11]=new Topic("  Binary Search Trees, Insert/Remove", "lectures/Binary_Search_Trees.pdf");
-topics[12]=new Topic("  AVL Trees", "lectures/AVL_Trees.pdf");
-topics[13]=new Topic("  AVL Trees (Cont.)", "");
-topics[14]=new Topic("  **NO CLASS - Fall Break**", "");
-topics[15]=new Topic("  Red-Black Trees", "lectures/Red-Black_Trees.pdf");
-topics[16]=new Topic("  Red-Black Trees (Cont.)", "");
-topics[17]=new Topic("  Review for Exam #2", "");
-topics[18]=new Topic("  **Exam #2**", "");
-topics[19]=new Topic("  AA-Trees, Insert", "lectures/AA-tree_lecture.pdf");
-topics[20]=new Topic("  AA-Trees, Delete", "lectures/AA-tree_lecture.pdf");
-topics[21]=new Topic("  B-Trees", "lectures/B-Trees.pdf");
-topics[22]=new Topic("  Review for Exam #3", "");
-topics[23]=new Topic("  **Exam #3**", "");
-topics[24]=new Topic("  Binary Heaps", "lectures/Heaps.pdf");
-topics[25]=new Topic("  **NO CLASS - Thanksgiving Break**", "");
-topics[26]=new Topic("  Binary Heaps (Cont.)", "");
-topics[27]=new Topic("  Hash Tables", "lectures/Hash_Tables.pdf");
-topics[28]=new Topic("  Hash Tables (Cont.)", "");
-topics[29]=new Topic("  Graphs", "lectures/Graphs.pdf) & [Dijkstra's Algorithm](lectures/Dijkstras_Algorithm.pdf");
-topics[30]=new Topic("  **Final Exam**", "");
-// //////////////////////////////////////////////////////////////////////////////////////////////
-
-// //////////////////////////////////////////////////////////////////////////////////////////////
-// List of Labs
-// //////////////////////////////////////////////////////////////////////////////////////////////
-labs[0] = "[Lab 1: Histogram in C++](labs/lab01.html)";
-labs[1] = "[Lab 2: Postfix expression evaluator](labs/lab02.html)";
-labs[2] = "[Lab 3: Value semantics in C++](labs/lab03.html)";
-labs[3] = "[Lab 4: Benchmarking vector and list](labs/lab04.html)";
-labs[4] = "[Lab 5: Linked list implementation](labs/lab05.html)";
-labs[5] = "";
-labs[6] = "";
-labs[7] = "";
-labs[8] = "";
-labs[9] = "[Lab 6: Binary tree traversal algorithms](labs/lab06.html)";
-labs[10] = "";
-labs[11] = "";
-labs[12] = "";
-labs[13] = "";
-labs[14] = "";
-labs[15] = "";
-labs[16] = "";
-labs[17] = "";
-labs[18] = "";
-labs[19] = "";
-labs[20] = "";
-labs[21] = "";
-labs[22] = "";
-labs[23] = "";
-labs[24] = "";
-labs[25] = "";
-labs[26] = "";
-labs[27] = "";
-labs[28] = "";
-labs[29] = "";
-labs[30] = "";
-// //////////////////////////////////////////////////////////////////////////////////////////////
-
-// //////////////////////////////////////////////////////////////////////////////////////////////
-// List of Assignments
-// //////////////////////////////////////////////////////////////////////////////////////////////
-assigns[0] = "";
-assigns[1] = "[Integer Array Stack (Due Sep 11  by 11:59 PM)](assign/assign01.html)";
-assigns[2] = "";
-assigns[3] = "";
-assigns[4] = "[Doubly Linked List (Due Sep 18 by 11:59 PM)](assign/assign02.html)";
-assigns[5] = "";
-assigns[6] = "[SkipList (Due Sep 27 by 11:59 PM)](assign/assign03.html)";
-assigns[7] = "";
-assigns[8] = "";
-assigns[9] = "[RandomArt (Due Oct 9 by 11:59 PM)](assign/assign04.html)";
-assigns[10] = "";
-assigns[11] = "";
-assigns[12] = "[BST (Due Oct 27 by 11:59 PM)](assign/assign05.html)";
-assigns[13] = "";
-assigns[14] = "";
-assigns[15] = "";
-assigns[16] = "";
-assigns[17] = "";
-assigns[18] = "";
-assigns[19] = "[AATree (Due Nov 14 by 11:59 PM)](assign/assign06.html)";
-assigns[20] = "";
-assigns[21] = "";
-assigns[22] = "";
-assigns[23] = "";
-assigns[24] = "[Binary Heap (Due Dec 4 by 11:59 PM)](assign/assign07.html)";
-assigns[25] = "";
-assigns[26] = "";
-assigns[27] = "[Hash Table (Due Dec 11 by 11:59 PM)](assign/assign08.html)";
-assigns[28] = "";
-assigns[29] = "";
-assigns[30] = "";
-// //////////////////////////////////////////////////////////////////////////////////////////////
-// //////////////////////////////////////////////////////////////////////////////////////////////
+// // //////////////////////////////////////////////////////////////////////////////////////////////
+// // List of Topics
+// // //////////////////////////////////////////////////////////////////////////////////////////////
+// topics[0]=new Topic("  Intro to C++", "lectures/intro_to_C++.html");
+// topics[1]=new Topic("  Stacks", "lectures/Stacks_lecture.pdf) & [Queues](lectures/Queues_lecture.pdf)";
+// topics[2]=new Topic("  C++ Templates", "lectures/C++_templates.html");
+// topics[3]=new Topic("  Linked Lists", "lectures/LinkedList_lecture.pdf");
+// topics[4]=new Topic("  Doubly Linked Lists", "lectures/DoublyLinkedList_lecture.pdf");
+// topics[5]=new Topic("  Skip Lists", "lectures/Skip_Lists.pdf");
+// topics[6]=new Topic("  Skip Lists (Cont.)", "");
+// topics[7]=new Topic("  Review for Exam #1", "");
+// topics[8]=new Topic("  **Exam #1**", "");
+// topics[9]=new Topic("  Trees", "lectures/Trees_lecture.pdf) & [Tree Traversal", "lectures/Tree_Traversal_lecture.pdf");
+// topics[10]=new Topic("  Binary Search Trees, Find", "lectures/Binary_Search_Trees.pdf");
+// topics[11]=new Topic("  Binary Search Trees, Insert/Remove", "lectures/Binary_Search_Trees.pdf");
+// topics[12]=new Topic("  AVL Trees", "lectures/AVL_Trees.pdf");
+// topics[13]=new Topic("  AVL Trees (Cont.)", "");
+// topics[14]=new Topic("  **NO CLASS - Fall Break**", "");
+// topics[15]=new Topic("  Red-Black Trees", "lectures/Red-Black_Trees.pdf");
+// topics[16]=new Topic("  Red-Black Trees (Cont.)", "");
+// topics[17]=new Topic("  Review for Exam #2", "");
+// topics[18]=new Topic("  **Exam #2**", "");
+// topics[19]=new Topic("  AA-Trees, Insert", "lectures/AA-tree_lecture.pdf");
+// topics[20]=new Topic("  AA-Trees, Delete", "lectures/AA-tree_lecture.pdf");
+// topics[21]=new Topic("  B-Trees", "lectures/B-Trees.pdf");
+// topics[22]=new Topic("  Review for Exam #3", "");
+// topics[23]=new Topic("  **Exam #3**", "");
+// topics[24]=new Topic("  Binary Heaps", "lectures/Heaps.pdf");
+// topics[25]=new Topic("  **NO CLASS - Thanksgiving Break**", "");
+// topics[26]=new Topic("  Binary Heaps (Cont.)", "");
+// topics[27]=new Topic("  Hash Tables", "lectures/Hash_Tables.pdf");
+// topics[28]=new Topic("  Hash Tables (Cont.)", "");
+// topics[29]=new Topic("  Graphs", "lectures/Graphs.pdf) & [Dijkstra's Algorithm](lectures/Dijkstras_Algorithm.pdf");
+// topics[30]=new Topic("  **Final Exam**", "");
+// // //////////////////////////////////////////////////////////////////////////////////////////////
+//
+// // //////////////////////////////////////////////////////////////////////////////////////////////
+// // List of Labs
+// // //////////////////////////////////////////////////////////////////////////////////////////////
+// labs[0] = "[Lab 1: Histogram in C++](labs/lab01.html)";
+// labs[1] = "[Lab 2: Postfix expression evaluator](labs/lab02.html)";
+// labs[2] = "[Lab 3: Value semantics in C++](labs/lab03.html)";
+// labs[3] = "[Lab 4: Benchmarking vector and list](labs/lab04.html)";
+// labs[4] = "[Lab 5: Linked list implementation](labs/lab05.html)";
+// labs[5] = "";
+// labs[6] = "";
+// labs[7] = "";
+// labs[8] = "";
+// labs[9] = "[Lab 6: Binary tree traversal algorithms](labs/lab06.html)";
+// labs[10] = "";
+// labs[11] = "";
+// labs[12] = "";
+// labs[13] = "";
+// labs[14] = "";
+// labs[15] = "";
+// labs[16] = "";
+// labs[17] = "";
+// labs[18] = "";
+// labs[19] = "";
+// labs[20] = "";
+// labs[21] = "";
+// labs[22] = "";
+// labs[23] = "";
+// labs[24] = "";
+// labs[25] = "";
+// labs[26] = "";
+// labs[27] = "";
+// labs[28] = "";
+// labs[29] = "";
+// labs[30] = "";
+// // //////////////////////////////////////////////////////////////////////////////////////////////
+//
+// // //////////////////////////////////////////////////////////////////////////////////////////////
+// // List of Assignments
+// // //////////////////////////////////////////////////////////////////////////////////////////////
+// assigns[0] = "";
+// assigns[1] = "[Integer Array Stack (Due Sep 11  by 11:59 PM)](assign/assign01.html)";
+// assigns[2] = "";
+// assigns[3] = "";
+// assigns[4] = "[Doubly Linked List (Due Sep 18 by 11:59 PM)](assign/assign02.html)";
+// assigns[5] = "";
+// assigns[6] = "[SkipList (Due Sep 27 by 11:59 PM)](assign/assign03.html)";
+// assigns[7] = "";
+// assigns[8] = "";
+// assigns[9] = "[RandomArt (Due Oct 9 by 11:59 PM)](assign/assign04.html)";
+// assigns[10] = "";
+// assigns[11] = "";
+// assigns[12] = "[BST (Due Oct 27 by 11:59 PM)](assign/assign05.html)";
+// assigns[13] = "";
+// assigns[14] = "";
+// assigns[15] = "";
+// assigns[16] = "";
+// assigns[17] = "";
+// assigns[18] = "";
+// assigns[19] = "[AATree (Due Nov 14 by 11:59 PM)](assign/assign06.html)";
+// assigns[20] = "";
+// assigns[21] = "";
+// assigns[22] = "";
+// assigns[23] = "";
+// assigns[24] = "[Binary Heap (Due Dec 4 by 11:59 PM)](assign/assign07.html)";
+// assigns[25] = "";
+// assigns[26] = "";
+// assigns[27] = "[Hash Table (Due Dec 11 by 11:59 PM)](assign/assign08.html)";
+// assigns[28] = "";
+// assigns[29] = "";
+// assigns[30] = "";
+// // //////////////////////////////////////////////////////////////////////////////////////////////
+// // //////////////////////////////////////////////////////////////////////////////////////////////
 
 
 var days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
@@ -180,7 +180,8 @@ function Topic(title, link) {
 
 
 function t(i) {
-    document.write("<a href=\"" + topics[i].link + "\">" + topics[i].title + "</a>");
+    // document.write("<a href=\"" + topics[i].link + "\">" + topics[i].title + "</a>");
+    return "hello";
 }
 
 // t(0);
