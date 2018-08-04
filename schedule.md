@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: schedule
 course_number: CS350
 title: Schedule
 ---
