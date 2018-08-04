@@ -56,7 +56,7 @@ topics = [
 // //////////////////////////////////////////////////////////////////////////////////////////////
 // List of Labs
 // //////////////////////////////////////////////////////////////////////////////////////////////
-// labs[0] = new Lab("Lab 1: Histogram in C++", "labs/lab01.html");
+labs[0] = new Lab("Lab 1: Histogram in C++", "labs/lab01.html");
 // labs[1] = new Lab("Lab 2: Postfix expression evaluator", "labs/lab02.html");
 // labs[2] = new Lab("Lab 3: Value semantics in C++", "labs/lab03.html");
 // labs[3] = new Lab("Lab 4: Benchmarking vector and list", "labs/lab04.html");
@@ -92,7 +92,7 @@ topics = [
 // //////////////////////////////////////////////////////////////////////////////////////////////
 // List of Assignments
 // //////////////////////////////////////////////////////////////////////////////////////////////
-// assigns[0] = "";
+assigns[0] = "";
 // assigns[1] = new Assignment("Integer Array Stack (Due Sep 11  by 11:59 PM)", "assign/assign01.html", "");
 // assigns[2] = "";
 // assigns[3] = "";
