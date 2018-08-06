@@ -206,8 +206,8 @@ function printCalendar() {
         document.write("<tr>");
         document.write("<td>" + getDateString(calendar[i].date) + "</td>");
         document.write("<td>" + getTopicString(calendar[i].topic) + "</td>");
-        // document.write("<td>" + getLabString(calendar[i].lab, calendar[i].date) + "</td>");
-        document.write("<td>" + getReadingString(calendar[i].reading) + "</td>");
+        document.write("<td>" + getLabString(calendar[i].lab, calendar[i].date) + "</td>");
+        // document.write("<td>" + getReadingString(calendar[i].reading) + "</td>");
         document.write("<td>" + getAssignmentString(calendar[i].assign, calendar[i].date) + "</td>");
         document.write("</tr>");
     }
