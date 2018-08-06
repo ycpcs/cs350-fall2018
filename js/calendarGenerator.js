@@ -69,6 +69,7 @@ function populateCalendar() {
     for (var calendarIndex=0, topicIndex=0; calendarIndex < regularSemesterDays; calendarIndex++) {
         if ((calendar[calendarIndex].topic === undefined) && (courseInfo.classPeriods[topicIndex] !== undefined)) {
             calendar[calendarIndex].topic = courseInfo.classPeriods[topicIndex].topic;
+            // calendar[calendarIndex].reading = courseInfo.classPeriods[topicIndex].reading;
             calendar[calendarIndex].lab = courseInfo.classPeriods[topicIndex].lab;
             calendar[calendarIndex].assign = courseInfo.classPeriods[topicIndex].assign;
             topicIndex++;
@@ -146,6 +147,12 @@ function getTopicString(topic) {
 
 
 
+function getReadingString(reading) {
+    return (reading !== undefined) ? reading : "";
+}
+
+
+
 // checks to see if a valid lab is available
 // and only displays the lab on the calendar if the lab date has arrived
 function getLabString(lab, assignOnDate) {
@@ -171,6 +178,11 @@ function getAssignmentString(assign, assignOnDate) {
         var dueDate = new Date(assignOnDate.getTime());
         dueDate.setDate(dueDate.getDate() + assign.daysToComplete);
         str += "<br>Due " + getDateString(dueDate) + " by 11:59 PM";
+    } else if ((assign instanceof Homework) && (assignOnDate.getTime() < today.getTime() || PREPOPULATE)) {
+        str = linkify(assign.title, assign.link);
+        var dueDate = new Date(assignOnDate.getTime());
+        dueDate.setDate(dueDate.getDate() + assign.daysToComplete);
+        str += "<br>Due " + getDateString(dueDate) + " in class";
     }
     return str;
 }
@@ -188,14 +200,14 @@ function printCalendar() {
         // this if-statement adds an extra 'empty' row between each week to make the week boundaries stand out a bit more
         // an extra boundary is NOT added after the last item unless there is a final exam that is taken during the final
         // exam period (i.e. not an in-class final).
-        if (((i !== 0) && ((i % courseInfo.classDays.length === 0) && i <regularSemesterDays)) || (!courseInfo.inClassFinalExam && i === regularSemesterDays)) {
+        if (((i !== 0) && (days[calendar[i].date.getDay()] === courseInfo.classDays[0])) || (!courseInfo.inClassFinalExam && i === regularSemesterDays)) {
             document.write("<tr><td></td><td></td><td></td><td></td></tr>");
         }
         document.write("<tr>");
         document.write("<td>" + getDateString(calendar[i].date) + "</td>");
-        // document.write("<td>" + " [" + i + "] " + getDateString(calendar[i].date) + "</td>");
         document.write("<td>" + getTopicString(calendar[i].topic) + "</td>");
-        document.write("<td>" + getLabString(calendar[i].lab, calendar[i].date) + "</td>");
+        // document.write("<td>" + getLabString(calendar[i].lab, calendar[i].date) + "</td>");
+        document.write("<td>" + getReadingString(calendar[i].reading) + "</td>");
         document.write("<td>" + getAssignmentString(calendar[i].assign, calendar[i].date) + "</td>");
         document.write("</tr>");
     }

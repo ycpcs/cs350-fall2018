@@ -59,6 +59,12 @@ function Lab(title, link) {
     this.link = link;
 }
 
+function Homework(title, link, daysToComplete) {
+    this.title = title;
+    this.link = link;
+    this.daysToComplete = daysToComplete;
+}
+
 function Assignment(title, link, daysToComplete) {
     this.title = title;
     this.link = link;
