@@ -118,7 +118,7 @@ function linkify(title, link) {
     } else {
         str = "<a href=\"" + link + "\">" + title + "</a>";
     }
-    return title.startsWith("**") ? ("<strong>" + str + "</strong>") : str;
+    return title.match("^\\*\\*") ? ("<strong>" + str + "</strong>") : str;
 }
 
 
