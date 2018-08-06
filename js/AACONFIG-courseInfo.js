@@ -1,5 +1,5 @@
 
-var PREPOPULATE = true;
+var PREPOPULATE = false;
 
 var courseInfo = {
     courseName: "CS350: Data Structures",
