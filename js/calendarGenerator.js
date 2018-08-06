@@ -172,15 +172,16 @@ function getLabString(lab, assignOnDate) {
 function getAssignmentString(assign, assignOnDate) {
     var str = "";
     var today = new Date();
+    var dueDate = "";
 
     if ((assign instanceof Assignment) && (assignOnDate.getTime() < today.getTime() || PREPOPULATE)) {
         str = linkify(assign.title, assign.link);
-        var dueDate = new Date(assignOnDate.getTime());
+        dueDate = new Date(assignOnDate.getTime());
         dueDate.setDate(dueDate.getDate() + assign.daysToComplete);
         str += "<br>Due " + getDateString(dueDate) + " by 11:59 PM";
     } else if ((assign instanceof Homework) && (assignOnDate.getTime() < today.getTime() || PREPOPULATE)) {
         str = linkify(assign.title, assign.link);
-        var dueDate = new Date(assignOnDate.getTime());
+        dueDate = new Date(assignOnDate.getTime());
         dueDate.setDate(dueDate.getDate() + assign.daysToComplete);
         str += "<br>Due " + getDateString(dueDate) + " in class";
     }
