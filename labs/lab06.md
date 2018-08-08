@@ -149,3 +149,32 @@ To create and manipulate a queue, for the LevelOrder traversal see the example c
 For more information on the std::queue, read the [documentation](http://www.cplusplus.com/reference/queue/queue/). 
 
 
+<br>
+
+### Testing
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+Run the test program.  If it prints
+
+<pre>
+End of main: everything is OK?
+</pre>
+
+Then all of the operations succeeded.
+
+**Important**: Just because all of the operations succeeded doesn't mean that the class is completely correct.  If you 
+forgot to delete the storage array for any of the **```Histogram```** objects, then programs using the class will have 
+a memory leak.
+
+
+
+<br>
+    
+### Checking for memory leaks
+    
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    
+For this lab, don't worry about checking for memory leaks.  The destructor for the included 
+```Tree``` data structure was intentionally left blank.  You will implement a destructor for
+a ```Tree``` data structure in a future assignment. 

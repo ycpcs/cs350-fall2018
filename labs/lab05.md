@@ -38,12 +38,15 @@ linked list, and (for the first two milestones) a **```tail```** pointer to keep
 implement the linked list operations using functions/methods.  The idea is to focus on the low-level manipulation of 
 the links that connect the nodes in the list.
 
+**IMPORTANT:** Recall that any object you create in C++, you must also destroy.  For each milestone, write the code
+necessary to delete all objects from memory.  Be sure to use **valgrind** to verify that you have no memory leaks.
+
 The **```Node```** type, in its simplest form, is defined as follows:
 
 ```cpp
 class Node {
 public:
-    Node(int v) : value(v), next(nullptr) { }
+    explicit Node(int v) : value(v), next(nullptr) { }
     int value;
     Node *next;
 };

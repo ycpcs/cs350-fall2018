@@ -106,5 +106,6 @@ This can be trickier than it sounds. Thankfully, there are tools such as [**```v
 that can automatically analyze your program and detect these types of errors.
 
 To check your program for memory leaks, run the command **```make memcheck```** from the command line.
+You can also run valgrind directly from many IDEs.
 
 Fix any memory leaks that are detected.
