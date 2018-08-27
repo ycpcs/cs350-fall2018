@@ -69,7 +69,7 @@ function populateCalendar() {
     for (var calendarIndex=0, topicIndex=0; calendarIndex < regularSemesterDays; calendarIndex++) {
         if ((calendar[calendarIndex].topic === undefined) && (courseInfo.classPeriods[topicIndex] !== undefined)) {
             calendar[calendarIndex].topic = courseInfo.classPeriods[topicIndex].topic;
-            // calendar[calendarIndex].reading = courseInfo.classPeriods[topicIndex].reading;
+            calendar[calendarIndex].reading = courseInfo.classPeriods[topicIndex].reading;
             calendar[calendarIndex].lab = courseInfo.classPeriods[topicIndex].lab;
             calendar[calendarIndex].assign = courseInfo.classPeriods[topicIndex].assign;
             topicIndex++;
@@ -113,12 +113,12 @@ function getStandardTimeString(date) {
 function linkify(title, link) {
     var str = "";
 
-    if (link === "") {
+    if (link === "" || link === undefined) {
         str = title;
     } else {
         str = "<a href=\"" + link + "\">" + title + "</a>";
     }
-    return title.match("^\\*\\*") ? ("<strong>" + str + "</strong>") : str;
+    return title.match("^\\*\\*") ? ("<strong>" + str.substring(2) + "</strong>") : str;
 }
 
 
@@ -148,7 +148,11 @@ function getTopicString(topic) {
 
 
 function getReadingString(reading) {
-    return (reading !== undefined) ? reading : "";
+    var str = "";
+    if (reading instanceof Reading) {
+        str = linkify(reading.title, reading.link);
+    }
+    return str;
 }
 
 
@@ -190,11 +194,17 @@ function getAssignmentString(assign, assignOnDate) {
 
 
 
-function printCalendar() {
+function printCalendar(cols) {
     var regularSemesterDays = getRegularSemesterDays();
 
     document.write("<table>");
-    document.write("<thead><tr><th>Date</th><th>Topic</th><th>Labs</th><th>Assignment</th></tr></thead>");
+    document.write("<thead><tr><th>Date</th>");
+    document.write((cols.topics) ? "<th>Topic</th>" : "");
+    document.write((cols.readings) ? "<th>Readings</th>" : "");
+    document.write((cols.labs) ? "<th>Labs</th>" : "");
+    document.write((cols.assignments) ? "<th>Assignments</th>" : "");
+    document.write("</tr></thead>");
+    document.write("<tbody>");
 
     // this for-loop prints all the rows for the calendar
     for (var i=0; i < calendar.length; i++) {
@@ -202,27 +212,33 @@ function printCalendar() {
         // an extra boundary is NOT added after the last item unless there is a final exam that is taken during the final
         // exam period (i.e. not an in-class final).
         if (((i !== 0) && (days[calendar[i].date.getDay()] === courseInfo.classDays[0])) || (!courseInfo.inClassFinalExam && i === regularSemesterDays)) {
-            document.write("<tr><td></td><td></td><td></td><td></td></tr>");
+            document.write("<tr>");
+            document.write("<td></td>"); // for date column
+            document.write((cols.topics) ? "<td></td>" : "");
+            document.write((cols.readings) ? "<td></td>" : "");
+            document.write((cols.labs) ? "<td></td>" : "");
+            document.write((cols.assignments) ? "<td></td>" : "");
+            document.write("</tr>");
         }
-        document.write("<tbody>");
         document.write("<tr>");
         document.write("<td>" + getDateString(calendar[i].date) + "</td>");
-        document.write("<td>" + getTopicString(calendar[i].topic) + "</td>");
-        document.write("<td>" + getLabString(calendar[i].lab, calendar[i].date) + "</td>");
-        // document.write("<td>" + getReadingString(calendar[i].reading) + "</td>");
-        document.write("<td>" + getAssignmentString(calendar[i].assign, calendar[i].date) + "</td>");
+        document.write((cols.topics) ? "<td>" + getTopicString(calendar[i].topic) + "</td>" : "");
+        document.write((cols.readings) ? "<td>" + getReadingString(calendar[i].reading) + "</td>" : "");
+        document.write((cols.labs) ? "<td>" + getLabString(calendar[i].lab, calendar[i].date) + "</td>" : "");
+        document.write((cols.assignments) ? "<td>" + getAssignmentString(calendar[i].assign, calendar[i].date) + "</td>" : "");
         document.write("</tr>");
-        document.write("</tbody>");
     }
+    document.write("</tbody>");
     document.write("</table>");
 }
 
 
 
-function autogenCalendar() {
+function autogenCalendar(cols) {
+    if (cols === undefined) { cols = {}; }
     generateDates();
     populateVacationDays();
     populateFinalExams();
     populateCalendar();
-    printCalendar();
+    printCalendar(cols);
 }

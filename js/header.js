@@ -70,4 +70,9 @@ function Assignment(title, link, daysToComplete) {
     this.link = link;
     this.daysToComplete = daysToComplete;
 }
+
+function Reading(title, link) {
+    this.title = title;
+    this.link = link;
+}
 ////////////////////////////////////////////////////
