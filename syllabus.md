@@ -136,7 +136,7 @@ Programs will be primarily graded on proper functionality based on a provided in
 
 
 
-### In-Class Labs &amp; Activities
+### In-Class Labs and Activities
 
 Throughout the semester, a series of in-class labs and activities will be distributed. These labs and
 activities are designed to help you better understand the various data structures and programming
