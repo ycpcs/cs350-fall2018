@@ -136,6 +136,17 @@ Programs will be primarily graded on proper functionality based on a provided in
 
 
 
+### In-Class Labs &amp; Activities
+
+Throughout the semester, a series of in-class labs and activities will be distributed. These labs and
+activities are designed to help you better understand the various data structures and programming
+techniques that we will discuss throughout the semester.  These in-class labs and activities are not
+graded and need not be submitted.
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+
+
 ### Attendance Policy
 
 Students are expected to attend all scheduled classes and read the appropriate text material prior to class. If you must 
