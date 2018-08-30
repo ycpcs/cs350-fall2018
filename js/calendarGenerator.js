@@ -234,8 +234,9 @@ function printCalendar(cols) {
 
 
 
-function autogenCalendar(cols) {
+function autogenCalendar(cols, debug) {
     if (cols === undefined) { cols = {}; }
+    if (debug !== undefined && debug.debug_prepopulate) { PREPOPULATE = true; }
     generateDates();
     populateVacationDays();
     populateFinalExams();
