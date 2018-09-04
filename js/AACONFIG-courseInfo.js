@@ -33,7 +33,7 @@ var courseInfo = {
         },
         {
             topic: new Topic( "Linked Lists", "lectures/LinkedList_lecture.pdf" ),
-            lab: new Lab("Lab 4: Benchmarking vector and list", "labs/lab04.html")
+            //lab: new Lab("Lab 4: Benchmarking vector and list", "labs/lab04.html")
         },
         {
             topic: new Topic( "Doubly Linked Lists", "lectures/DoublyLinkedList_lecture.pdf" ),
