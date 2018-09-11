@@ -229,11 +229,10 @@ consider edge cases:
  - What happens when each method is called on a full data structure?
  - What happens when each method is called on a data structure that has a single element?
  
+**Be assured, that when your programming assignment is graded these edge cases (and more) will be tested.**
+
 The testing framework used in **```tests.cpp```** in called [Catch](https://github.com/philsquared/Catch). 
 Documentation can be found on the [Catch website](https://github.com/philsquared/Catch). 
-
-
-**Be assured, that when your programming assignment is graded these edge (and more) will be tested.**
 
 
 

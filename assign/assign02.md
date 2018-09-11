@@ -282,9 +282,13 @@ overloaded *assignment operator*, i.e. = method which performs the copy of the d
 Once you have completed implementing any of the above methods (the remaining unimplemented methods will be drawn from the 
 static library):
 
-In a terminal window, navigate to the directory containing the source file and run the command **```make```** to compile.
+**In CLion:**  
+From the "Run" menu, select "Run" (or click the "Run" button in the top right of the IDE)
 
-To run the test program run the command **```./LinkedList```**.
+**In the terminal:**  
+Navigate to the directory containing the source files and run the command **```make```** to compile.
+
+Run the command **```./LinkedList```**.
 
 Congratulations, you have just written your first C++ data structure that uses templates!
 
@@ -308,11 +312,10 @@ consider edge cases:
  - What happens when each method is called on a full data structure?
  - What happens when each method is called on a data structure that has a single element?
  
+**Be assured, that when your programming assignment is graded these edge cases (and more) will be tested.**
+
 The testing framework used in **```tests.cpp```** in called [Catch](https://github.com/philsquared/Catch). 
 Documentation can be found on the [Catch website](https://github.com/philsquared/Catch). 
-
-
-**Be assured, that when your programming assignment is graded these edge (and more) will be tested.**
 
 
 
@@ -328,7 +331,13 @@ should have a corresponding instance of **```delete```** to free the memory that
 This can be trickier than it sounds. Thankfully, there are tools such as [**```valgrind```**](http://valgrind.org) 
 that can automatically analyze your program and detect these types of errors.
 
-To check your program for memory leaks, run the command **```make memcheck```** from the command line.
+To check your program for memory leaks, 
+
+**In CLion:**  
+From the "Run" menu, select "Run ... with Valgrind Memcheck" (or click the "Memcheck" button in the top right of the IDE)
+
+**In the terminal:**  
+Navigate to the directory containing the source files and run the command **```make memcheck```** from the command line.
 
 Fix any memory leaks that are detected.
 
