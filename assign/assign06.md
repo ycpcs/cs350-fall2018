@@ -308,11 +308,16 @@ deallocated, deallocate the current node.
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
-Once you have completed implementing any of the above methods (the remaining unimplemented methods will be drawn from the static library):
+Once you have completed implementing any of the above methods (the remaining unimplemented methods will be drawn from the 
+static library):
 
-In a terminal window, navigate to the directory containing the source file and run the command **```make```** to compile.
+**In CLion:**  
+From the "Run" menu, select "Run" (or click the "Run" button in the top right of the IDE)
 
-To run the test program run the command **```./AATree```**.
+**In the terminal:**  
+Navigate to the directory containing the source files and run the command **```make```** to compile.
+
+Run the command **```./AATree```**.
 
 Congratulations, you have just implemented an AA tree C++ data structure with templates!
 
@@ -354,7 +359,13 @@ should have a corresponding instance of **```delete```** to free the memory that
 This can be trickier than it sounds. Thankfully, there are tools such as [**```valgrind```**](http://valgrind.org) 
 that can automatically analyze your program and detect these types of errors.
 
-To check your program for memory leaks, run the command **```make memcheck```** from the command line.
+To check your program for memory leaks, 
+
+**In CLion:**  
+From the "Run" menu, select "Run ... with Valgrind Memcheck" (or click the "Memcheck" button in the top right of the IDE)
+
+**In the terminal:**  
+Navigate to the directory containing the source files and run the command **```make memcheck```** from the command line.
 
 Fix any memory leaks that are detected.
 
