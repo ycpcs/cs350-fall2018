@@ -6,7 +6,7 @@ title: "Assignment 5: Binary Search Tree"
 
 <br>
 
-This lab will implement a binary search tree that stores arbitrary objects via class templates. The tree will 
+This assignment will implement a binary search tree that stores arbitrary objects via class templates. The tree will 
 dynamically allocate nodes as necessary for space efficiency.
 
 
@@ -24,7 +24,7 @@ Download [BST.zip](BST.zip), saving it into the **assignments** directory.
 
 Double-click on **BST.zip** and extract the contents of the archive into a subdirectory called **BST**.
 
-For this lab, a static library has been provided (containing working versions of each method) to allow for testing of 
+For this assignment, a static library has been provided (containing working versions of each method) to allow for testing of 
 each class method independently. Any unimplemented methods in **BST.cpp** will use the corresponding method from the 
 library, thus you can implement the methods in any order. Be sure to test each method you implement individually against 
 the library for proper operation which can be accomplished by uncommenting the appropriate **```#define```** in 

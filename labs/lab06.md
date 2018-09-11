@@ -28,11 +28,11 @@ implementation of the **```printKeysLevelOrder```** method.
 Download [CS350_Lab06.zip](CS350_Lab06.zip).  Unzip it.  
 In a terminal window, change directory to the **```CS350_Lab06```** directory.
 
-Using a text editor, open the files **```main.cpp```** and **```Tree.cpp```**.
+Using CLion (or some lame text editor), open the files **```main.cpp```** and **```Tree.cpp```**.
 
-To compile the test program, run the command **```make```**.
+To compile the test program, either compile within CLion or run the command **```make```** at the command line.
 
-To run the program, run the command **```./lab06```**.
+To run the test program, either press the PLAY button in CLion, or run the command **```./lab06```** at the commend line.
 
 
 

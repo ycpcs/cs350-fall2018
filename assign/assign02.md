@@ -7,7 +7,7 @@ title: "Assignment 2: Doubly Linked List"
 
 <br>
 
-This lab will implement a doubly linked list that stores arbitrary objects via class templates. The list will dynamically 
+This assignment will implement a doubly linked list that stores arbitrary objects via class templates. The list will dynamically 
 allocate nodes as necessary for space efficiency.
 
 
@@ -25,7 +25,7 @@ Download [LinkedList.zip](LinkedList.zip), saving it into the **assignments** di
 
 Double-click on **LinkedList.zip** and extract the contents of the archive into a subdirectory called **LinkedList**
 
-For this lab, a static library has been provided (containing working versions of each method) to allow for testing of 
+For this assignment, a static library has been provided (containing working versions of each method) to allow for testing of 
 each class method independently. Any unimplemented methods in **LinkedList.cpp** will use the corresponding method from the 
 library, thus you can implement the methods in any order. Be sure to test each method you implement individually against 
 the library for proper operation which can be accomplished by uncommenting the appropriate **```#define```** in the 
@@ -111,12 +111,12 @@ both operations should take O(1), i.e. constant, time.
 **Tasks**
 
   - Add a method named **```getFirst()```** that returns a **```const```** *reference* to a **```T```** object that is 
-  stored in the first node in the list, or the contents of the sentinel node if the list is empty (for this lab, the 
+  stored in the first node in the list, or the contents of the sentinel node if the list is empty (for this assignment, the 
   sentinel node will contain **0**). **Hint:** Consider how the first list node can be directly accessed through the 
   **```dummy```** sentinel node.
   
   - Add a method named **```getLast()```** that returns a **```const```** *reference* to a **```T```** object that is 
-  stored in the last node in the list, or the contents of the sentinel node if the list is empty (for this lab, the 
+  stored in the last node in the list, or the contents of the sentinel node if the list is empty (for this assignment, the 
   sentinel node will contain **0**). **Hint:** Consider how the last list node can be directly accessed through the 
   **```dummy```** sentinel node.
 

@@ -7,7 +7,7 @@ title: "Assignment 6: AA Tree"
 
 <br>
 
-This lab will implement a AA tree that stores arbitrary objects via class templates. The tree will dynamically allocate 
+This assignment will implement a AA tree that stores arbitrary objects via class templates. The tree will dynamically allocate 
 nodes as necessary for space efficiency. Pseudocode for the AA tree operations can be found in the original paper 
 [Balanced Search Trees Made Simple" by Arne Andersson](http://user.it.uu.se/~arnea/ps/simp.pdf) from the Proc. Workshop 
 on Algorithms and Data Structures, Springer Verlag, 1993.
@@ -27,7 +27,7 @@ Download [AATree.zip](AATree.zip), saving it into the **assignments** directory.
 
 Double-click on **AATree.zip** and extract the contents of the archive into a subdirectory called **AATree**.
 
-For this lab, a static library has been provided (containing working versions of each method) to allow for testing of 
+For this assignment, a static library has been provided (containing working versions of each method) to allow for testing of 
 each class method independently. Any unimplemented methods in **AATree.cpp** will use the corresponding method from the 
 library, thus you can implement the methods in any order. Be sure to test each method you implement individually against 
 the library for proper operation which can be accomplished by uncommenting the appropriate **```#define```** in the 

@@ -7,7 +7,7 @@ title: "Assignment 7: Binary Heap"
 
 <br>
 
-This lab will implement a binary heap that stores arbitrary objects via class templates. The heap will use a templated 
+This assignment will implement a binary heap that stores arbitrary objects via class templates. The heap will use a templated 
 array backing structure whose size will be dynamically adjusted depending on the size of the heap being stored.
 
 
@@ -24,7 +24,7 @@ Download [BinHeap.zip](BinHeap.zip), saving it into the **assignments** director
 
 Double-click on **BinHeap.zip** and extract the contents of the archive into a subdirectory called **BinHeap**.
 
-For this lab, a static library has been provided (containing working versions of each method) to allow for testing of 
+For this assignment, a static library has been provided (containing working versions of each method) to allow for testing of 
 each class method independently. Any unimplemented methods in **BinHeap.cpp** will use the corresponding method from 
 the library, thus you can implement the methods in any order. Be sure to test each method you implement individually 
 against the library for proper operation which can be accomplished by uncommenting the appropriate **```#define```** 

@@ -7,7 +7,7 @@ title: "Assignment 8: Hash Table"
 
 <br>
 
-This lab will implement a hash table that stores *string* objects (without using class templates) using chaining to 
+This assignment will implement a hash table that stores *string* objects (without using class templates) using chaining to 
 resolve collisions with the end of each chain indicated by **```nullptr```**. Thus the hash table will store **```Node```** 
 objects that contain the string value in a **```data```** field and a **```next```** pointer to the next **```Node```** 
 in the list. The hash table size will be fixed upon instantiation of the table and the hashing function method 
@@ -28,7 +28,7 @@ Download [HashTable.zip](HashTable.zip), saving it into the **assignments** dire
 
 Double-click on **HashTable.zip** and extract the contents of the archive into a subdirectory called **HashTable**.
 
-For this lab, a static library has been provided (containing working versions of each method) to allow for testing of 
+For this assignment, a static library has been provided (containing working versions of each method) to allow for testing of 
 each class method independently. Any unimplemented methods in **HashTable.cpp** will use the corresponding method from 
 the library, thus you can implement the methods in any order. Be sure to test each method you implement individually 
 against the library for proper operation which can be accomplished by uncommenting the appropriate **```#define```** in 

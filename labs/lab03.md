@@ -14,11 +14,11 @@ title: "Lab 3: Value semantics in C++"
 Download [CS350_Lab03.zip](CS350_Lab03.zip).  Unzip it.  
 In a terminal window, change directory to the **```CS350_Lab03```** directory.
 
-Using a text editor, open the file **```main.cpp```**.
+Using CLion (or some lame text editor), open the file **```main.cpp```**.
 
-To compile the test program, run the command **```make```**.
+To compile the test program, either compile within CLion or run the command **```make```** at the command line.
 
-To run the program, run the command **```./lab03```**.
+To run the test program, either press the PLAY button in CLion, or run the command **```./lab03```** at the commend line.
 
 
 
