@@ -75,4 +75,9 @@ function Reading(title, link) {
     this.title = title;
     this.link = link;
 }
+
+function Handout(title, link) {
+    this.title = title;
+    this.link = link;
+}
 ////////////////////////////////////////////////////

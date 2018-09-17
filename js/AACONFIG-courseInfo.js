@@ -25,6 +25,7 @@ var courseInfo = {
         {
             topic: new DoubleTopic( "Stacks", "lectures/Stacks_lecture.pdf", "Queues", "lectures/Queues_lecture.pdf" ),
             lab: new Lab("Lab 2: Postfix expression evaluator", "labs/lab02.html"),
+            handout: new Handout("Handout: Stacks & Queues", "activities/1 - Stacks & Queues.pdf"),
             assign: new Assignment("Integer Array Stack", "assign/assign01.html", 11)
         },
         {
@@ -32,7 +33,7 @@ var courseInfo = {
             lab: new Lab("Lab 3: Value semantics in C++", "labs/lab03.html")
         },
         {
-            topic: new Topic( "Linked Lists", "lectures/LinkedList_lecture.pdf" ),
+            topic: new Topic( "Linked Lists", "lectures/LinkedList_lecture.pdf" )
             //lab: new Lab("Lab 4: Benchmarking vector and list", "labs/lab04.html")
         },
         {
@@ -41,10 +42,12 @@ var courseInfo = {
             assign: new Assignment("Doubly Linked List", "assign/assign02.html", 6)
         },
         {
-            topic: new Topic( "Skip Lists", "lectures/Skip_Lists.pdf" )
+            topic: new Topic( "Skip Lists (Find)", "lectures/Skip_Lists.pdf" ),
+            handout: new Handout("Handout: Skip Lists (Find)", "./activities/2 - Skiplist Find.pdf")
         },
         {
-            topic: new Topic( "Skip Lists (Cont.)", "" ),
+            topic: new Topic( "Skip Lists (Insert / Remove)", "" ),
+            handout: new Handout("Handout: Skip Lists (Insert)", "activities/3 - Skiplist Insert.pdf"),
             assign: new Assignment("SkipList", "assign/assign03.html", 8)
         },
         {
@@ -62,20 +65,25 @@ var courseInfo = {
             topic: new Topic( "Binary Search Trees, Find", "lectures/Binary_Search_Trees.pdf" )
         },
         {
-            topic: new Topic( "Binary Search Trees, Insert/Remove", "lectures/Binary_Search_Trees.pdf" )
+            topic: new Topic( "Binary Search Trees, Insert/Remove", "lectures/Binary_Search_Trees.pdf" ),
+            handout: new Handout("Handout: BST Remove", "activities/4 - BST Remove.pdf")
         },
         {
-            topic: new Topic( "AVL Trees", "lectures/AVL_Trees.pdf" ),
+            topic: new Topic( "AVL Trees (Insert)", "lectures/AVL_Trees.pdf" ),
+            handout: new Handout("Handout: AVL Trees (Insert)", "activities/5 - AVL Trees Insert.pdf"),
             assign: new Assignment("BST", "assign/assign05.html", 17)
         },
         {
-            topic: new Topic( "AVL Trees (Cont.)", "" )
+            topic: new Topic( "AVL Trees (Remove)", "" ),
+            handout: new Handout("Handout: AVL Trees (Remove)", "activities/6 - AVL Trees Remove.pdf")
         },
         {
-            topic: new Topic( "Red-Black Trees", "lectures/Red-Black_Trees.pdf" )
+            topic: new Topic( "Red-Black Trees", "lectures/Red-Black_Trees.pdf" ),
+            handout: new Handout("Handout: Red-Black Trees (Insert)", "activities/7 - Red-Black Trees Insert.pdf")
         },
         {
-            topic: new Topic( "Red-Black Trees (Cont.)", "" )
+            topic: new Topic( "Red-Black Trees (Cont.)", "" ),
+            handout: new Handout("Handout: Red-Black Trees (Insert More)", "activities/8 - Red-Black Trees Insert 2.pdf")
         },
         {
             topic: new Topic( "Review for Exam #2", "" )
@@ -84,14 +92,17 @@ var courseInfo = {
             topic: new Topic( "** Exam #2", "" )
         },
         {
-            topic: new Topic( "AA-Trees, Insert", "lectures/AA-tree_lecture.pdf" ),
+            topic: new Topic( "AA-Trees (Insert)", "lectures/AA-tree_lecture.pdf" ),
+            handout: new Handout("Handout: AA-Trees (Insert)", "activities/9 - AA Trees.pdf"),
             assign: new Assignment("AATree", "assign/assign06.html", 12)
         },
         {
-            topic: new Topic( "AA-Trees, Delete", "lectures/AA-tree_lecture.pdf" )
+            topic: new Topic( "AA-Trees (Delete)", "lectures/AA-tree_lecture.pdf" ),
+            handout: new Handout("Handout: AA-Trees (Delete)", "activities/10 - AA Trees 2.pdf")
         },
         {
-            topic: new Topic( "B-Trees", "lectures/B-Trees.pdf" )
+            topic: new Topic( "B-Trees", "lectures/B-Trees.pdf" ),
+            handout: new Handout("Handout: B-Trees", "activities/11 - B-Trees.pdf")
         },
         {
             topic: new Topic( "Review for Exam #3", "" )
@@ -101,6 +112,7 @@ var courseInfo = {
         },
         {
             topic: new Topic( "Binary Heaps", "lectures/Heaps.pdf" ),
+            handout: new Handout("Handout: Binary Heaps", "activities/12 - Binary Heaps.pdf"),
             assign: new Assignment("Binary Heap", "assign/assign07.html", 9)
         },
         {
@@ -108,13 +120,15 @@ var courseInfo = {
         },
         {
             topic: new Topic( "Hash Tables", "lectures/Hash_Tables.pdf" ),
+            handout: new Handout("Handout: Hash Tables", "activities/13 - Hash Tables.pdf"),
             assign: new Assignment("Hash Table", "assign/assign08.html", 11)
         },
         {
             topic: new Topic( "Hash Tables (Cont.)", "" )
         },
         {
-            topic: new DoubleTopic( "Graphs", "lectures/Graphs.pdf", "Dijkstra's Algorithm", "lectures/Dijkstras_Algorithm.pdf" )
+            topic: new DoubleTopic( "Graphs", "lectures/Graphs.pdf", "Dijkstra's Algorithm", "lectures/Dijkstras_Algorithm.pdf" ),
+            handout: new Handout("Handout: Graphs", "activities/14 - Graphs Adjacency Matrix and List.pdf")
         },
         {
             topic: new Topic( "** Final Exam", "" )

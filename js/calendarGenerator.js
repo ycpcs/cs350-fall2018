@@ -71,6 +71,7 @@ function populateCalendar() {
             calendar[calendarIndex].topic = courseInfo.classPeriods[topicIndex].topic;
             calendar[calendarIndex].reading = courseInfo.classPeriods[topicIndex].reading;
             calendar[calendarIndex].lab = courseInfo.classPeriods[topicIndex].lab;
+            calendar[calendarIndex].handout = courseInfo.classPeriods[topicIndex].handout;
             calendar[calendarIndex].assign = courseInfo.classPeriods[topicIndex].assign;
             topicIndex++;
         }
@@ -157,6 +158,18 @@ function getReadingString(reading) {
 
 
 
+function getHandoutString(handout, assignOnDate) {
+    var str = "";
+    var today = new Date();
+
+    if ((handout instanceof Handout) && (assignOnDate.getTime() < today.getTime() || PREPOPULATE)) {
+        str = linkify(handout.title, handout.link);
+    }
+    return str;
+}
+
+
+
 // checks to see if a valid lab is available
 // and only displays the lab on the calendar if the lab date has arrived
 function getLabString(lab, assignOnDate) {
@@ -224,7 +237,7 @@ function printCalendar(cols) {
         document.write("<td>" + getDateString(calendar[i].date) + "</td>");
         document.write((cols.topics) ? "<td>" + getTopicString(calendar[i].topic) + "</td>" : "");
         document.write((cols.readings) ? "<td>" + getReadingString(calendar[i].reading) + "</td>" : "");
-        document.write((cols.labs) ? "<td>" + getLabString(calendar[i].lab, calendar[i].date) + "</td>" : "");
+        document.write((cols.labs) ? "<td>" + getLabString(calendar[i].lab, calendar[i].date) + "<br>" + getHandoutString(calendar[i].handout, calendar[i].date) + "</td>" : "");
         document.write((cols.assignments) ? "<td>" + getAssignmentString(calendar[i].assign, calendar[i].date) + "</td>" : "");
         document.write("</tr>");
     }
