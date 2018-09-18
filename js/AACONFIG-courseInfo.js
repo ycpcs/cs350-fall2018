@@ -47,7 +47,7 @@ var courseInfo = {
         },
         {
             topic: new Topic( "Skip Lists (Insert / Remove)", "" ),
-            handout: new Handout("Handout: Skip Lists (Insert)", "activities/3 - Skiplist Insert.pdf"),
+            handout: new Handout("Handout: Skip Lists (Insert / Remove)", "activities/3 - Skiplist Insert.pdf"),
             assign: new Assignment("SkipList", "assign/assign03.html", 8)
         },
         {
@@ -62,10 +62,10 @@ var courseInfo = {
             assign: new Assignment("RandomArt", "assign/assign04.html", 11)
         },
         {
-            topic: new Topic( "Binary Search Trees, Find", "lectures/Binary_Search_Trees.pdf" )
+            topic: new Topic( "Binary Search Trees (Find)", "lectures/Binary_Search_Trees.pdf" )
         },
         {
-            topic: new Topic( "Binary Search Trees, Insert/Remove", "lectures/Binary_Search_Trees.pdf" ),
+            topic: new Topic( "Binary Search Trees (Insert / Remove)", "" ),
             handout: new Handout("Handout: BST Remove", "activities/4 - BST Remove.pdf")
         },
         {
@@ -97,7 +97,7 @@ var courseInfo = {
             assign: new Assignment("AATree", "assign/assign06.html", 12)
         },
         {
-            topic: new Topic( "AA-Trees (Delete)", "lectures/AA-tree_lecture.pdf" ),
+            topic: new Topic( "AA-Trees (Delete)", "" ),
             handout: new Handout("Handout: AA-Trees (Delete)", "activities/10 - AA Trees 2.pdf")
         },
         {
