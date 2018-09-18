@@ -66,7 +66,7 @@ var courseInfo = {
         },
         {
             topic: new Topic( "Binary Search Trees (Insert / Remove)", "" ),
-            handout: new Handout("Handout: BST Remove", "activities/4 - BST Remove.pdf")
+            handout: new Handout("Handout: BST (Remove)", "activities/4 - BST Remove.pdf")
         },
         {
             topic: new Topic( "AVL Trees (Insert)", "lectures/AVL_Trees.pdf" ),
