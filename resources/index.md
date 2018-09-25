@@ -18,7 +18,7 @@ This page contains links to useful resources.
    
  - [Marmoset Submission Server](https://cs.ycp.edu/marmoset/)
  
- - [VMWare Player (free)](https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_workstation_player/12_0)
+ - [VMWare Player (free)](https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_workstation_player/15_0)
  
  - [CentOS 7 (1804)](http://mirror.cs.pitt.edu/centos/7.5.1804/isos/x86_64/CentOS-7-x86_64-DVD-1804.iso) (4.5 GB download)
   <br>A complete guide for installing CentOS7 and CLion can be found [here](centOS7_install.html)
