@@ -48,7 +48,7 @@ var courseInfo = {
         {
             topic: new Topic( "Skip Lists (Insert / Remove)", "" ),
             handout: new Handout("Handout: Skip Lists (Insert / Remove)", "activities/3 - Skiplist Insert.pdf"),
-            assign: new Assignment("SkipList", "assign/assign03.html", 8)
+            assign: new Assignment("SkipList", "assign/assign03.html", 20)
         },
         {
             topic: new Topic( "Review for Exam #1", "" )
@@ -59,7 +59,7 @@ var courseInfo = {
         {
             topic: new DoubleTopic( "Trees", "lectures/Trees_lecture.pdf", "Tree Traversal", "lectures/Tree_Traversal_lecture.pdf" ),
             lab: new Lab("Lab 6: Binary tree traversal algorithms", "labs/lab06.html"),
-            assign: new Assignment("RandomArt", "assign/assign04.html", 11)
+            assign: new Assignment("RandomArt", "assign/assign04.html", 1000000000)
         },
         {
             topic: new Topic( "Binary Search Trees (Find)", "lectures/Binary_Search_Trees.pdf" )
