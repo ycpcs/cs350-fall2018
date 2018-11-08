@@ -15,6 +15,11 @@ This page contains links to useful resources.
  - Another C++ Reference: [LearnCpp.com](http://www.learncpp.com)
  
  - [Online data structure visualization](http://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+ 
+ - [Gnarly Trees](https://people.ksp.sk/~kuko/gnarley-trees/) (useful for AA-Tree Visualization)
+   <br>If you have trouble running the version distributed on their official page, 
+   <br>try this one: [gnarlyTree.jar](./gnarlyTrees/gnarlyTree.jar)
+   <br>to run: java -jar gnarlyTree.jar
    
  - [Marmoset Submission Server](https://cs.ycp.edu/marmoset/)
  
