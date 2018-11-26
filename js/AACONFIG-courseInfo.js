@@ -113,7 +113,7 @@ var courseInfo = {
         {
             topic: new Topic( "Binary Heaps", "lectures/Heaps.pdf" ),
             handout: new Handout("Handout: Binary Heaps", "activities/12 - Binary Heaps.pdf"),
-            assign: new Assignment("Binary Heap", "assign/assign07.html", 9)
+            assign: new Assignment("Binary Heap", "assign/assign07.html", 7)
         },
         {
             topic: new Topic( "Binary Heaps (Cont.)", "" )
@@ -121,11 +121,11 @@ var courseInfo = {
         {
             topic: new Topic( "Hash Tables", "lectures/Hash_Tables.pdf" ),
             handout: new Handout("Handout: Hash Tables", "activities/13 - Hash Tables.pdf"),
-            assign: new Assignment("Hash Table", "assign/assign08.html", 11)
+            assign: new Assignment("Hash Table", "assign/assign08.html", 6)
         },
-        {
-            topic: new Topic( "Hash Tables (Cont.)", "" )
-        },
+        // {
+        //     topic: new Topic( "Hash Tables (Cont.)", "" )
+        // },
         {
             topic: new DoubleTopic( "Graphs", "lectures/Graphs.pdf", "Dijkstra's Algorithm", "lectures/Dijkstras_Algorithm.pdf" ),
             handout: new Handout("Handout: Graphs", "activities/14 - Graphs Adjacency Matrix and List.pdf")

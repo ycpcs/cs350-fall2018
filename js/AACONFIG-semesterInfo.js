@@ -12,5 +12,6 @@ var semesterInfo = {
         new VacationDays("Labor Day",          new Date("09/3/2018"),  new Date("09/3/2018")),
         new VacationDays("Fall Break",         new Date("10/13/2018"), new Date("10/16/2018")),
         new VacationDays("Thanksgiving Break", new Date("11/21/2018"), new Date("11/25/2018")),
+        new VacationDays("Snow Day",           new Date("11/20/2018"), new Date("11/20/2018")),
     ]
 };
