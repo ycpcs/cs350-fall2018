@@ -131,7 +131,7 @@ var courseInfo = {
             handout: new Handout("Handout: Graphs", "activities/14 - Graphs Adjacency Matrix and List.pdf")
         },
         {
-            topic: new Topic( "** Final Exam", "" )
+            topic: new Topic( "** Final Exam (non-cumulative)", "" )
         }
     ]
 };
